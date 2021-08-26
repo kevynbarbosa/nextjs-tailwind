@@ -1,4 +1,4 @@
-import IconButton from "./common/IconButton";
+import IconButton from "../common/IconButton";
 
 IconButton;
 export default function Chat() {
