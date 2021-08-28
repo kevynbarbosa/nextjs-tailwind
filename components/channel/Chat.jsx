@@ -1,4 +1,6 @@
 import IconButton from "../common/IconButton";
+import ChatTextArea from "./ChatTextArea";
+import MessageList from "./MessageList";
 
 IconButton;
 export default function Chat() {
@@ -15,12 +17,11 @@ export default function Chat() {
             <IconButton icon="settings" />
           </div>
         </div>
-        <div className="flex-grow">Body</div>
-        <div className="h-16 p-2 flex-col">
-          <div className="flex-grow w-full rounded bg-default text-active px-4">
-            input
-          </div>
-          <span>Some hint</span>
+        <div className="flex-grow">
+          <MessageList />
+        </div>
+        <div className="p-2">
+          <ChatTextArea />
         </div>
       </div>
     </>
